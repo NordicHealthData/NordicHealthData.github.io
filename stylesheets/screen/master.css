@@ -27,8 +27,9 @@ a:visited {
 
 a:hover,
 a:visited:hover {
-    color: #81ec62;
-    text-decoration: underline;
+    color: #262123;
+    font-weight: 500; /* Medium */
+    text-decoration: none;
 }
 
 /* Structure (header, content, etc.)
@@ -87,7 +88,9 @@ a:visited:hover {
 /* Content
 ---------------------------------------------------------------------------- */
 
-#content p {
+#content p,
+#content ul,
+#content ol {
     font-size: 14px;
     font-weight: 300; /* Light */
 }
@@ -144,4 +147,53 @@ a:visited:hover {
 
 #content .featured .tag.prototype {
     background-color: #c60f13;
+}
+
+#content .featured-grid h2 {
+    clear: both;
+    font-size: 18px;
+}
+
+#content .featured-grid img {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    max-width: 64px;
+}
+
+/* Content timeline */
+
+#content .timeline {
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0 0 0 15px;
+}
+
+#content .timeline li {
+    border-left: 3px solid #50c035;
+    font-size: 13px;
+    margin-left: 2px;
+    padding: 15px;
+}
+
+#content .timeline li.history {
+    border-left: 1px solid #aaa;
+    margin-left: 3px;
+    color: #888;
+    padding-left: 17px;
+}
+
+#content .timeline li.next {
+    border-left: 7px solid #50c035;
+    font-weight: 500; /* Medium */
+    margin-left: 0;
+}
+
+#content .timeline li.next span {
+    background-color: #50c035;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 5px;
 }
