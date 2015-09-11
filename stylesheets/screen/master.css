@@ -1,0 +1,147 @@
+/*
+-------------------------------------------------------------------------------
+Nordic Health Data (Static Homepage) master styles
+---------------------------------------------------------------------------- */
+
+/* Global definitions
+---------------------------------------------------------------------------- */
+
+body {
+    background-color: #e8e9f3;
+    color: #262123;
+    font-family: "Work Sans", "Trebuchet MS", Helvetica, "Helvetica Neue", sans-serif;
+    font-size: 100%; /* = 16px */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-weight: 300; /* Light */
+    line-height: 1.5em;
+}
+
+a:link,
+a:visited {
+    color: #50c035;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited:hover {
+    color: #81ec62;
+    text-decoration: underline;
+}
+
+/* Structure (header, content, etc.)
+---------------------------------------------------------------------------- */
+
+/* Header
+---------------------------------------------------------------------------- */
+
+#header {
+    background-color: #50c035;
+    border-top: 7px solid #fff;
+    margin-bottom: 30px;
+    padding: 15px 0;
+}
+
+/* Overrides for the Foundation Top Bar */
+
+.contain-to-grid,
+#header .top-bar,
+#header .top-bar.expanded,
+#header .top-bar.expanded .title-area,
+#header .top-bar .top-bar-section ul li,
+#header .top-bar .top-bar-section li:not(.has-form) a:not(.button) {
+    background: none;
+}
+
+#header .top-bar .name {
+    height: auto;
+}
+
+#header .top-bar .name h1 a,
+#header .top-bar .name h2 a,
+#header .top-bar .name h3 a,
+#header .top-bar .name h4 a,
+#header .top-bar .name p a,
+#header .top-bar .name span a,
+#header .top-bar .toggle-topbar.menu-icon a,
+#header .top-bar .top-bar-section ul li > a {
+    color: #fff;
+    font-family: "Work Sans", "Trebuchet MS", Helvetica, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+}
+
+#header .top-bar .has-dropdown .dropdown li {
+    padding: 0;
+}
+
+/* --- Navigation (Foundation Top Bar) --- */
+
+#header .navigation #logo a:link,
+#header .navigation #logo a:visited {
+    font-size: 20px;
+    font-weight: 300; /* Light */
+}
+
+/* Content
+---------------------------------------------------------------------------- */
+
+#content p {
+    font-size: 14px;
+    font-weight: 300; /* Light */
+}
+
+#content .block {
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 25px 0;
+}
+
+/* Featured content */
+
+#content .featured {
+    background-color: #50c035;
+    background: url(/images/content/blackboard.jpg) 50% 50% no-repeat transparent;
+    background-size: cover;
+    color: #fff;
+    margin-top: -30px;
+    margin-bottom: 25px;
+    min-height: 400px;
+    padding: 25px 0;
+}
+
+#content img.featured {
+    background: none;
+    min-height: 0;
+    padding: 0;
+}
+
+#content .featured h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 200; /* Extra-Light */
+    line-height: 3rem;
+    margin: 85px 0 50px 0;
+}
+
+#content .featured h1 small {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    font-size: 26px;
+    margin-top: 15px;
+    line-height: 2rem;
+}
+
+#content .featured .tag {
+    font-size: 14px;
+    font-weight: 500; /* Medium */
+    padding: 2px 4px;
+    text-align: center;
+    vertical-align: super;
+}
+
+#content .featured .tag.prototype {
+    background-color: #c60f13;
+}
